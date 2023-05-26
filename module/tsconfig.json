@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./ts",
+        "typeRoots": ["../node_modules/@types"],
+        "lib": ["dom", "es5", "es2015", "es2015.core", "es2015.collection", "es2015.iterable"],
+        "sourceMap": true,
+        "target": "es5",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "alwaysStrict": true,
+        "noEmitOnError": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "pretty": true,
+        "removeComments": false,
+        "noImplicitReturns": true,
+        "strictFunctionTypes": true,
+        "traceResolution": false,
+        "downlevelIteration": true,
+    }
+}
