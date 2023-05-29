@@ -1,8 +1,13 @@
 function init() {
+    console.log('Initializing')
     import('somemodule').then((_somemodule)=> {
-        _somemodule("Hello!")
+        _somemodule.default("Hello!")
+    }).catch(err => {
+        console.log(err)
     })
 
 }
+setTimeout(() => {
+    init();
 
-init();
+}, 1000)

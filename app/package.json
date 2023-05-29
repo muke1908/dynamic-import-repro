@@ -5,12 +5,15 @@
     "name": "module",
     "main": "dist/main.js",
     "types": "main.d.ts",
-    "scripts": {        
-        "build": "npm run clean && webpack --config webpack.config.js  --mode=development",        
+    "scripts": {
+        "build": "npm run clean && node ../node_modules/webpack/bin/webpack.js --config webpack.config.js  --mode=development",
         "clean": "rm -rf dist"
     },
     "version": "0.0.1",
     "dependencies": {
         "somemodule": "file:../module"
+    },
+    "devDependencies": {
+        "serve": "^14.2.0"
     }
 }

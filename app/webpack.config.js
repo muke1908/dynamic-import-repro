@@ -1,9 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
     entry: {
-       "main":'./src/main.ts',
+       "main":'./ts/main.ts',
     },
     devtool: process.env.NODE_ENV === 'production' ? 'source-map': 'inline-source-map',
     module: {
@@ -23,4 +25,9 @@ module.exports = {
         libraryTarget: 'umd',
         clean: true,
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+          template: 'index.html'
+        }),
+      ],
 };
