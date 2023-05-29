@@ -4,13 +4,11 @@
     "ts-loader": "^9.4.3",
     "typescript": "^5.0.4",
     "webpack": "^5.84.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "serve": "^14.2.0"
   },
   "scripts": {
     "setup": "npm install && cd module && npm install && npm run build && cd ../app && npm install && npm run build",
     "serve": "serve app/dist"
-  },
-  "dependencies": {
-    "serve": "^14.2.0"
   }
 }
